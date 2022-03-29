@@ -1,0 +1,18 @@
+.btn-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    width: 300px;
+}
+
+.character-route {
+ margin-left: 5px;
+}
+
+.logout-route {
+    margin-left: 10px;
+}

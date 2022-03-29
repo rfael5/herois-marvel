@@ -1,0 +1,39 @@
+.logo {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-self: center;
+}
+
+.login-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    height: 350px;    
+    margin-top: 40px;
+}
+
+.user-input {
+    margin-top: 10px;
+}
+
+.password-input {
+    margin-top: 10px;
+}
+
+.input-usuario {
+ margin-left: 5px;
+}
+
+.input-senha {
+    margin-left: 14px;
+}
+
+.btn {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 50px;
+}

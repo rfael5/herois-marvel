@@ -1,0 +1,18 @@
+<div fxFlex fxLayout="column">
+    <div class="btn-container">
+        <div class="btn logout-route">
+            <a routerLink="/login" fxFlex mat-flat-button color="primary">
+                Sair
+            </a>
+        </div>        
+    </div>
+    <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>    
+    <div fxLayout="row wrap">
+        <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column"
+        *ngFor="let character of allCharacters | async " style="padding: 5px;">
+            <div *ngIf="searchText === '' || character.name.toLowerCase().includes(searchText)">
+                <app-character [character]="character"></app-character>
+            </div>
+        </div>
+    </div>
+</div>
