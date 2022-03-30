@@ -6,14 +6,14 @@
                 <form>
                     <div class="user-input">                    
                         <label>Usuário:</label>
-                        <input class="input-usuario" type="text"/>
+                        <input class="input-usuario" type="text" [(ngModel)]="usuario" name="usuario"/>
                     </div>
                     <div class="password-input">
                         <label>Senha:</label>
-                        <input class="input-senha" type="password"/>
+                        <input class="input-senha" type="password" [(ngModel)]="senha" name="senha"/>
                     </div>
                     <div>
-                        <button class="btn" mat-raised-button color="primary" routerLink="/characters">Login</button>
+                        <button class="btn" mat-raised-button color="primary" (click)="autenticar()">Login</button>
                     </div>
                 </form>
             </div>
